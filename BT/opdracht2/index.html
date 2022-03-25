@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 2 - Apple</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#tristan">Tristan</a>
+            <a href="#muhammet">Muhammet</a>
+            <a href="#daan">Daan</a>
+        </nav>
+        <section>
+            <h1><span>O. Apple is </span>not so accessible.</h1>
+            <p>Voor ons onderzoek hebben wij de website gekozen van Apple. Apple staat vaak wel bekend als hét bedrijf
+                wat hun zaken wel goed op orde heeft qua development en design. Toch hebben ook zij flaws in hun
+                website, en veel issues die een probleem voor sommige kunnen zijn als ze de website bezoeken van Apple.
+            </p>
+            <a href="https://www.apple.com" target="_blank"> https://www.apple.com</a>
+        </section>
+    </header>
+    <hr>
+    <main>
+        <section id="tristan">
+            <h2>Tristan</h2>
+            <article>
+                <h3>LocalStorage</h3>
+                <h4>Local Storage vs Session Storage</h4>
+                <p>local storage en sessionstorage zijn bijna hetzelfde je roept ze ook aan met dezelfde API, het
+                    verschil
+                    zit hem in dat bij sessionstorage de data opgeslagen wordt totdat de “tab” wordt gesloten. Bij Local
+                    storage wordt de data opgeslagen totdat de gebruiker zijn cache schoonmaakt of wanneer de web-app
+                    dat
+                    doet.
+
+                    <ul>
+                        Voorbeelden van dingen die je opslaat in je localstorage:
+                        <li>Voortgang</li>
+                        <li>Zoektermen</li>
+                        <li>Opgeslagen items</li>
+                    </ul>
+                    Als je iets opslaat in je localstorage moet je natuurlijk wel onthouden dat wanneer iemand zijn
+                    cache
+                    verwijderd de localstorage ook wordt geleegd. Als je iemand bijvoorbeeld progressie heeft gemaakt op
+                    een
+                    spel die localstorage gebruikt dat zal alle progressie weg gaan als de de cache wordt verwijderd.
+
+                    Op deze manier sla je iets op in je localstorage in Javascript:
+                </p>
+                <p class="localStorage"></p>
+                <p class="localStorage"></p>
+                <button class="button">localStorage</button>
+                <button class="button">Cookie Storage</button>
+                <p>
+                    In je localstorage zie je de item staan die je hebt opgeslagen zelfs wanneer je de code hierboven
+                    weg zal halen zullen deze items hier nog steeds staan opgeslagen. Inspecteren > application > local
+                    Storage
+                    Hier zie je het object { key: value } wat je ook weer kan ophalen voor bijvoorbeeld een detail
+                    pagina.
+
+                    <a href="https://www.apple.com/shop/bag">https://www.apple.com/shop/bag</a>
+                    Bevindingen over localStorage toegepast op de website van apple
+
+
+                    Wanneer je inlogt en je slaat iets op dat wordt dit bewaard in de “bag” tab.
+                    Op het moment dat je, je jouw cache verwijderd wordt je automatische uitgelogd.
+                    Wanneer je weer inlogt staan je items er wel weer, ik denk dat de items worden opgeslagen in een
+                    database onder een user ID, waardoor deze niet worden verwijderd met de cache.
+
+                </p>
+            </article>
+            <article>
+                <h3>Cookies</h3>
+                <h4>Cookies (instellingen) </h4>
+                <p>
+                    Cookies werken op een manier hetzelfde als localstorage and sessionstorage
+                    verschillen zijn dat cookies worden gesupport door alle browsers, ook moet localstorage handmatig
+                    worden verwijderd en kunnen er op cookies instellingen worden gezet, wat betekent dat cookies
+                    automatische verwijderd kunnen worden. Daarnaast is localstorage alleen beschikbaar op de client
+                    side en zijn cookies (data) beschikbaar op client side en server side wat het nog powerful maakt.
+                </p>
+                <p>
+                    Om een simpele cookie te maken doe je simpelweg;
+                    document.cookie = “name=Tristan”;
+                    name = key, Tristan = value;
+                </p>
+                <ol>
+                    Bevindingen over Cookies toegepast op de website van apple
+                    <li>Bij apple als je de cookies verwijderd worden de items uit je shopping bag verwijderd. </li>
+                    <li>Tegelijkertijd wordt je ook uitgelogd.</li>
+                    <li>Hoe dit precies in zijn werking gaat weet ik niet maar ik weet wel dat er data zit verwerkt in
+                        de cookies om de gebruikservaring beter te maken.</li>
+                </ol>
+            </article>
+            <article>
+                <h3>Breedband internet</h3>
+                <h4></h4>
+                <p>Om te testen of de apple website nog goed werkt met langzaam internet heb ik ervoor gezorgd dat de
+                    website nu op 3g langzaam internet zit dat heb ik gedaan door: inspecteren > network > 3g slow</p>
+                <ol>
+                    bevindingen:
+                    <li>
+                        Wat opviel is dat de website nog vrij goed werkt, niet het gevoel dat het nu langzamer is.
+                    </li>
+                    <li>Plaatjes laden duurt wel super lang er staat in dit geval niks, en omdat apple grote plaatjes
+                        heeft ziet dit er best raar uit. </li>
+                    <li> De website werkt nog steeds goed behalve dat het natuurlijk langzamer is. </li>
+                </ol>
+            </article>
+        </section>
+        <hr>
+        <section id="muhammet">
+            <h2>Muhammet</h2>
+            <article>
+                <h3>Afbeeldingen</h3>
+                <h4>Wat zijn afbeeldingen?</h4>
+                <p>
+                    Een afbeelding of een illustratie kan meerdere functies hebben. De bekendste vorm is een visuele
+                    toelichting bij een verhaal of een beschrijving. Een afbeelding kan ook enkel een verhaal of
+                    bewering laten zien zonder een tekst of beschrijving wat erbij hoort, bijvoorbeeld een achtergrond
+                    foto van een stad. Ook kan een afbeelding een aanvulling zijn voor een interface om het meer visueel
+                    mooier te maken, zoals banners.
+                </p>
+                <h4>Case Apple</h4>
+                <p>
+                    Als de afbeeldingen uitgeschakeld zijn op de browser Chrome en als je dan de website van Apple
+                    bezoekt, dan komt het heel kaal over vergeleken met als de afbeeldingen wel aan stonden.
+
+                    Op de home pagina zie je dan als koptekst tekst daan over de iPhone 13 Pro. Onder de teksten is er
+                    dan een groot leeg ruimte. Daar hoort dan een afbeelding te staan maar als de afbeeldingen uit staan
+                    is het leeg. Er staat ook geen alt tekst bij wat wel heel handig geweest zou zijn als dat er wel was
+                    geweest.
+                </p>
+                <img data-aos="fade-up" src="./images/apple1.png" alt="screenshot of apple website with images">
+                <img data-aos="fade-up" src="./images/apple2.png" alt="screenshot of apple website without images">
+                <p>
+                    Op de voorbeeld hieronder kan de gebruiker zonder een afbeelding te zien weinig begrijpen
+                    wat de context is. De gebruiker leest alleen ‘Vol kleur. Vol vermogen’. Wat moet de gebruiker
+                    hiervan begrijpen? Zonder een alt tekst is het ook heel onduidelijk. Op de voorbeeld hieronder is
+                    het wel goed, een afbeelding met een boodschap moet een alt tekst hebben om uit te leggen wat voor
+                    afbeelding het is.
+                </p>
+                <h4>Goed voorbeeld</h4>
+                <img data-aos="fade-up" src="./images/ah1.png" alt="screenshot of AH website">
+                <h4>Slecht voorbeeld</h4>
+                <img data-aos="fade-up" src="./images/ah2.png" alt="screenshot of AH website">
+            </article>
+            <article>
+                <h3>Custom Fonts</h3>
+                <h4>Wat zijn Custom Fonts?</h4>
+                <p>Custom Fonts zijn aangepaste, zelfgemaakte fonts om een ander lettertype te weergeven. Een goed
+                    voorbeeld
+                    hiervan is een icon font. Deze custom font laat in plaats van letters iconen zien. Bijvoorbeeld als
+                    de
+                    gebruiker de letter ‘A’ typt, komt er een icoontje (bijvoorbeeld een opslaan icoon) tevoorschijn in
+                    plaats van de letter ‘A’.
+
+                    Een ander voorbeeld voor custom fonts zijn lettertypes wat uniek gemaakt zijn. Een voorbeeld is de
+                    lettertype Zaans. <a
+                        href="https://www.zaans.nl/uploads/media/5ec515bbe5798/zaans-brandbook-v2-1-2018.pdf"
+                        target="_blank">(https://www.zaans.nl/uploads/media/5ec515bbe5798/zaans-brandbook-v2-1-2018.pdf)</a>.
+                    Dit lettertype is uniek want het is speciaal gemaakt voor de website Zaans.nl waarbij mensen
+                    informatie
+                    kan lezen over bepaalde activiteiten zoals de Zaanse Schans.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="daan">
+            <h2>Daan (Gecheckt in Safari)</h2>
+            <article>
+                <h3>JavaScript</h3>
+                <h4>Hoe functioneel is de website van Apple?</h4>
+                <ul>
+                    <li>JavaScript is een veelgebruikte scripttaal om webpagina's interactief te maken en webapplicaties
+                        te ontwikkelen. Naast HTML en CSS is JavaScript een van de kerntechnologieën van het wereldwijde
+                        web. (bron: <a
+                            href="https://nl.wikipedia.org/wiki/JavaScript">https://nl.wikipedia.org/wiki/JavaScript</a>)
+                    </li>
+                    <li>Hoeveel mensen zetten ongeveer hun JavaScript uit: volgens dit artikel (bron: <a
+                            href="https://www.searchenginepeople.com/blog/stats-no-javascript.html">How Many Users Have
+                            JavaScript Disabled - Search Engine ...https://www.searchenginepeople.com ›
+                            stats-no-javascript</a>) zal het tussen de 0 en 2 procent zijn. Het gemiddelde zal zo’n 1,3%
+                        zijn. Andere artikelen (wel van een aantal jaar geleden) leggen het gemiddelde op 0,2/0,1%.
+                    </li>
+                    <li>
+                        Als ik bij Apple de JavaScript uitzet (dit kan in safari bij het tabje ontwikkel en dan helemaal
+                        onderin naar “Schakel JavaScript uit”) dan zul je gelijk merken dat verschillende functies
+                        verdwijnen. Geen popup om je locatie of taal aan te passen, ook worden sommige afbeeldingen
+                        langzamer ingeladen en zullen veel animaties niet meer werken. We kennen allemaal wel de toffe
+                        animaties van Apple op hun product pagina’s. Deze werken dan niet echt meer. Deze vertrouwen nog
+                        teveel op JS.
+
+                    </li>
+                    <li>
+                        Ook veel support websites van Apple werken niet meer en geven aan dat je Browser JS nodig heeft
+                        om te kunnen draaien en werken.
+                    </li>
+                </ul>
+                <video data-aos="fade-up" src="./images/Schermopname-2022-03-24-om-11.46.36.mp4" width="100%"
+                    controls></video>
+                <video data-aos="fade-up" src="./images/Schermopname-2022-03-24-om-11.46.53.mp4" width="100%"
+                    controls></video>
+            </article>
+            <article>
+                <h3>Kleur</h3>
+                <h4>Kleur uitzetten & kleurenblindheid instellen</h4>
+                <ul>
+                    <li>
+                        Via <a
+                            href="https://www.toptal.com/designers/colorfilter/">https://www.toptal.com/designers/colorfilter/</a>
+                        kun je heel gemakkelijk je website checken met filters die de verschillende soorten kleurenblind
+                        tonen. Het is gek om dit zien, de website blijft wel werken. Het enige probleem hier is dat
+                        producten natuurlijk anders er uit kunnen zien. Hier kan Apple natuurlijk ook niet heel veel aan
+                        doen. Ik heb niet het gevoel dat als je kleurenblind bent je veel problemen zal hebben op de
+                        website
+                        van Apple.</li>
+                    <li>Meer over kleurenblindheid <a
+                            href="https://en.wikipedia.org/wiki/Color_blindness">https://en.wikipedia.org/wiki/Color_blindness</a>
+                    </li>
+                    <li>
+                        Goed artikel van CSS Tricks over het testen van kleurenblindheid in je website (in dit artikel
+                        staan nog meer goede artikelen, ja wat een inception). <a
+                            href="https://css-tricks.com/accessibility-basics-testing-your-page-for-color-blindness/">https://css-tricks.com/accessibility-basics-testing-your-page-for-color-blindness/</a>
+                    </li>
+                    <li>
+                        Ik had 1 klein foutje gezien, van een licht grijze tekst op een witte achtergrond. Voor de rest
+                        voldoet Apple wel aan de WCAG. Hier meer over WCAG <a href="https://wcag.nl">https://wcag.nl</a>
+                    </li>
+                    <li>
+                        Apple werkt zonder kleur (grayscale) ook goed. Dit komt ook omdat ze veel zwart, wit en grijs
+                        gebruiken in hun basis stijl.
+                    </li>
+                </ul>
+                <img data-aos="fade-up" src="./images/Schermafbeelding 2022-03-24 om 11.44.30.png" width="100%"
+                    alt="screenshot of apple website in colorblindness mode">
+                <img data-aos="fade-up" src="./images/Schermafbeelding 2022-03-24 om 11.45.18.png" width="100%"
+                    alt="screenshot of apple website in colorblindness mode">
+                <img data-aos="fade-up" src="./images/Schermafbeelding 2022-03-24 om 11.46.03.png" width="100%"
+                    alt="screenshot of apple website in colorblindness mode">
+            </article>
+            <article>
+                <h3>Muis/Trackpad</h3>
+                <h4>Werkt de website van Apple zonder muis of trackpad?</h4>
+                <ul>
+                    <li>
+                        Ik heb de website getest zonder muis en trackpad, dus alleen met tab. Hier heeft Apple niet goed
+                        aangezeten. Ik kom niet verder namelijk. Ook door de popup van taal en locatie. Maar als ik die
+                        weg haal dan kan ik nog steeds niet verder. Dit is best een probleem. Zo kun je de website
+                        gewoon niet gebruiken.
+                    </li>
+                    <li>
+                        In Chrome heb ik het even getest, hier werkt het tabben wel zoals het moet. Dus dit kan ook een
+                        issue zijn van Safari. Dit is voor de browser ook niet goed. Bij Chrome kun je wel heel
+                        gemakkelijk met tab door de website van Apple.
+                    </li>
+                    <li>
+                        Ik heb ook in Safari wat andere sites geprobeerd met tab, de ene werkt weer wel en de ander weer
+                        niet. Toch is Safari met tab niet heel soepel. Dan heeft Chrome dit toch beter gedaan.
+                    </li>
+                </ul>
+                <video data-aos="fade-up" src="./images/Schermopname-2022-03-24-om-11.48.17.mp4" width="100%"
+                    controls></video>
+                <video data-aos="fade-up" src="./images/Schermopname-2022-03-24-om-11.47.49.mp4" width="100%"
+                    controls></video>
+            </article>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
