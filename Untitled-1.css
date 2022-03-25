@@ -1,0 +1,47 @@
+/* header {
+  height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+header section {
+  position: relative;
+  padding-top: 10em;
+  height: 100vh;
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+
+header section h1 {
+  font-size: 92px;
+  font-weight: 200;
+}
+
+header section p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 6em;
+  margin-top: 2.5em;
+  opacity: 87%;
+}
+
+header section small {
+  font-size: 1em;
+  color: #999999;
+  margin-top: 3em;
+}
+
+header section img {
+  width: 750px;
+  height: auto;
+  align-items: center;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main section {
+  display: flex;
+} */
