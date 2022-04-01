@@ -11,10 +11,11 @@
     <% if(items.length === 0){ %>
     <h1>There is no content here!</h1>
     <% } else{ %> <% items.forEach(function(item){ %>
-    <img src="images/<%=item.image%>" alt="<%=item.image%>" />
-    <h1><%=item.title%></h1>
-    <p><%=item.location%></p>
-    <p><%=item.description%></p>
+    <a href="photo/<%=item.image%>">
+      <img src="images/<%=item.image%>" alt="<%=item.image%>" />
+      <h1><%=item.title%></h1>
+      <p><%=item.location%></p>
+    </a>
     <% }); %> <% } %>
   </body>
 </html>
