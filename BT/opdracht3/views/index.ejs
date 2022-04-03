@@ -3,19 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Your photo's</h1>
-    <!-- <img src="" alt="" /> -->
-    <% if(items.length === 0){ %>
-    <h1>There is no content here!</h1>
-    <% } else{ %> <% items.forEach(function(item){ %>
-    <a href="photo/<%=item.image%>">
-      <img src="images/<%=item.image%>" alt="<%=item.image%>" />
-      <h1><%=item.title%></h1>
-      <p><%=item.location%></p>
-    </a>
-    <% }); %> <% } %>
+    <header>
+      <small>Tristan Varewijck & Browser Technologies</small>
+      <div>
+        <h1>Photo review</h1>
+        <button>
+          <a href="photo/new-photo"
+            ><p>Add photo</p>
+            <span class="material-icons"> collections </span></a
+          >
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <% if(items.length === 0){ %>
+        <h1>There is no content here!</h1>
+        <% } else{ %> <% items.forEach(function(item){ %>
+        <a href="photo/<%=item.image%>">
+          <img src="images/<%=item.image%>" alt="<%=item.image%>" />
+        </a>
+        <% }); %> <% } %>
+      </section>
+    </main>
   </body>
 </html>
