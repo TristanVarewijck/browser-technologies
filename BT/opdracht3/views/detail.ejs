@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+  <%- include('partials/layout') %>
   <body>
-    <h1><%= detailItem.title %></h1>
-    <form
-      action="/photo/<%= detailItem.image %>/?_method=DELETE"
-      method="POST"
-      onsubmit="return confirm('Are you sure that you want to delete this?');"
-    >
-      <input type="submit" name="delete" id="delete" value="DELETE" />
-    </form>
+    <header>
+      <div>
+        <a href="/">
+          <span class="material-icons"> chevron_left </span>
+          <p>Go Back</p>
+        </a>
+      </div>
+    </header>
 
-    <a href="/photo/<%= detailItem.image %>/update">update</a>
+    <main data-route="detail">
+      <figure>
+        <img
+          src="../images/<%=detailItem.image%>"
+          alt="<%=detailItem.image%>"
+        />
+        <figcaption>
+          <small><%=detailItem.location%></small>
+          <h2><%=detailItem.title%></h2>
+          <p><%=detailItem.description%></p>
+          <div>
+            <form
+              action="/photo/<%= detailItem.image %>/?_method=DELETE"
+              method="POST"
+              onsubmit="return confirm('Are you sure that you want to delete this?');"
+            >
+              <button type="submit" name="delete" id="delete" value="DELETE">
+                <span class="material-icons"> delete </span>
+              </button>
+            </form>
+          </div>
+        </figcaption>
+      </figure>
+    </main>
   </body>
 </html>
