@@ -18,7 +18,7 @@
         <% if(items.length === 0){ %>
         <p>You have not added any pictures to your collection yet</p>
         <% } else{ %> <% items.forEach(function(item){ %>
-        <a href="photo/<%=item.image%>">
+        <a href="photo/<%=item.id%>">
           <img src="images/<%=item.image%>" alt="<%=item.image%>" />
           <span><p>More info</p></span>
         </a>

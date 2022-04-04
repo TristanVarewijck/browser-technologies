@@ -27,17 +27,20 @@ router.get("/photo/new-photo", function (req, res, next) {
   res.render("create");
 });
 
-// POST to homepage and load them on the inde
+// POST to homepage and load them on the index
 router.post("/", upload, async (req, res) => {
+  let uuid = uuidv4();
+
   const newPhoto = {
     title: req.body.title,
     location: req.body.location,
     description: req.body.description,
     image: req.file.filename,
+    id: uuid,
   };
 
   const jsonObj = JSON.stringify(newPhoto);
-  localStorage.setItem(uuidv4(), jsonObj);
+  localStorage.setItem(uuid, jsonObj);
 
   let items = [];
   for (var i = 0; i < localStorage.length; i++) {
