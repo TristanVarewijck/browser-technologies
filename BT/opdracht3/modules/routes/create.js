@@ -22,15 +22,12 @@ let storage = multer.diskStorage({
 });
 let upload = multer({ storage: storage }).single("file");
 
-/* GET users listing. */
 router.get("/photo/new-photo", function (req, res, next) {
-  res.render("create");
+  res.render("create", { title: "New photo" });
 });
 
-// POST to homepage and load them on the index
 router.post("/", upload, async (req, res) => {
   let uuid = uuidv4();
-
   const newPhoto = {
     title: req.body.title,
     location: req.body.location,
@@ -42,15 +39,7 @@ router.post("/", upload, async (req, res) => {
   const jsonObj = JSON.stringify(newPhoto);
   localStorage.setItem(uuid, jsonObj);
 
-  let items = [];
-  for (var i = 0; i < localStorage.length; i++) {
-    items.push(JSON.parse(localStorage.getItem(localStorage.key(i))));
-  }
-
-  res.render("index", {
-    title: "Express",
-    items: items,
-  });
+  res.redirect("/");
 });
 
 module.exports = router;
