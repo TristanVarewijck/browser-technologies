@@ -15,21 +15,20 @@ _Shields that represent my project - They change over time._
 ## Live Demo :clapper:
 
 See the latest updated demo here:
-[Link to DEMO](https://tristanvarewijck.github.io/TechDefined/)
+[Link to DEMO](https://tristanvarewijck.github.io/browser-technologies/)
 
 ---
 
 ## Description :label:
 
-For the project WAFS (Web Application from Scratch) I'm going to make a "single page" tech-news app.
-On the app you can see the most relevant articles in the tech world, in addition, you have suggested search results and you can search for articles on a specific topic. For the project i am using the NewsAPI.
+For "Opdracht 3" of BT we had to make a RESTfull api where the focus was the "core" functionality what is uploading images to an overview. The app should be responsive and remain its core functionality on different browsers and devices. The app should also work witout Javascript and CSS.
 
 ---
 
 ## Table of Contents :arrow_right_hook:
 
 - [Features](#features)
-- [Activiy] (#activitydiagram)
+<!-- - [Activiy] (#activitydiagram) -->
 - [Usage](#Usage)
 - [Meta](#meta)
 - [License](#license)
@@ -46,7 +45,7 @@ On the app you can see the most relevant articles in the tech world, in addition
    Every image has a detail page.
 3. **Upload** <br>
    You can upload a unlimited amount of images with a description.
-4. \*_Delete_ <br>
+4. **Delete** <br>
    You can delete images if you want them out your overview.
 
 ---
