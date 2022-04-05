@@ -2,15 +2,15 @@
 
 _Shields that represent my project - They change over time._
 
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) ![Activity](https://img.shields.io/github/last-commit/TristanVarewijck/browser-technologies/BT/opdracht3) ![Isseus](https://img.shields.io/github/issues/TristanVarewijck/browser-technologies/BT/opdracht3) ![Language](https://img.shields.io/github/languages/top/TristanVarewijck/TechDefined) ![Count](https://img.shields.io/github/languages/count/TristanVarewijck/browser-technologies/BT/opdracht3?color=#a55eea) ![NPM](https://img.shields.io/npm/v/npm) ![MIT-License](https://img.shields.io/apm/l/vim-mode)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) ![Activity](https://img.shields.io/github/last-commit/TristanVarewijck/browser-technologies/tree/main/BT/opdracht3) ![Isseus](https://img.shields.io/github/issues/TristanVarewijck/browser-technologies/tree/main/BT/opdracht3) ![Language](https://img.shields.io/github/languages/top/TristanVarewijck/TechDefined) ![Count](https://img.shields.io/github/languages/count/TristanVarewijck/browser-technologies/tree/main/BT/opdracht3?color=#a55eea) ![NPM](https://img.shields.io/npm/v/npm) ![MIT-License](https://img.shields.io/apm/l/vim-mode)
 
 ## TechDefined Concept Design :pencil2:
 
-![overview](https://github.com/TristanVarewijck/TristanVarewijck/browser-technologies/BT/opdracht3/blob/main/assets/images/readme/overview.png)
+![overview](https://github.com/TristanVarewijck/browser-technologies/blob/main/BT/opdracht3/public/images/readme/overview.png)
 
-![form](https://github.com/TristanVarewijck/TristanVarewijck/browser-technologies/BT/opdracht3/blob/main/assets/images/readme/form.png)
+![form](https://github.com/TristanVarewijck/browser-technologies/blob/main/BT/opdracht3/public/images/readme/form.png)
 
-![detail](https://github.com/TristanVarewijck/TristanVarewijck/browser-technologies/BT/opdracht3/blob/main/assets/images/readme/detail.png)
+![detail](https://github.com/TristanVarewijck/browser-technologies/blob/main/BT/opdracht3/public/images/readme/detail.png)
 
 ## Live Demo :clapper:
 
@@ -68,7 +68,7 @@ For using this app yourself you need to follow the following steps:
 ### 1. Clone Repo locally
 
 ```
-git clone hhttps://github.com/TristanVarewijck/browser-technologies.git
+git clone https://github.com/TristanVarewijck/browser-technologies.git
 ```
 
 ### 2. Go to correct folder - NPM
