@@ -1,10 +1,10 @@
-# Project WAFS :gear:
+# BT-eindopdracht :gear:
 
 _Shields that represent my project - They change over time._
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) ![Activity](https://img.shields.io/github/last-commit/TristanVarewijck/browser-technologies/tree/main/BT/opdracht3) ![Isseus](https://img.shields.io/github/issues/TristanVarewijck/browser-technologies/tree/main/BT/opdracht3) ![Language](https://img.shields.io/github/languages/top/TristanVarewijck/TechDefined) ![Count](https://img.shields.io/github/languages/count/TristanVarewijck/browser-technologies/tree/main/BT/opdracht3?color=#a55eea) ![NPM](https://img.shields.io/npm/v/npm) ![MIT-License](https://img.shields.io/apm/l/vim-mode)
 
-## TechDefined Concept Design :pencil2:
+## Concept :pencil2:
 
 ![overview](https://github.com/TristanVarewijck/browser-technologies/blob/main/BT/opdracht3/public/images/readme/overview.png)
 
