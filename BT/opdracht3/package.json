@@ -5,6 +5,9 @@
   "scripts": {
     "start": "nodemon ./bin/www"
   },
+  "engines": {
+    "node": "16.13.1"
+  },
   "dependencies": {
     "colors": "^1.4.0",
     "cookie-parser": "~1.4.4",

@@ -119,23 +119,55 @@ header a p {
   margin-right: 15px;
 }
 
+/* layout changer  */
+.layout-changer {
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  /* align-items: center; */
+}
+
+.layout-changer button.active {
+  border: 1px solid black;
+}
+
 /* flexbox is globally supported */
-main[data-route="landing"] section {
+main[data-route="landing"] section.layout-1 {
   background: var(--white);
   border-radius: 12px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
+}
+
+main[data-route="landing"] section.layout-2 {
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 main[data-route="landing"] section > p {
   text-align: center;
 }
 
-main[data-route="landing"] section a {
+main[data-route="landing"] section a.layout-1 {
   width: 250px;
   height: 300px;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+
+main[data-route="landing"] section a.layout-2 {
+  width: 500px;
+  height: 450px;
   margin: 20px;
   position: relative;
   text-align: center;
@@ -145,6 +177,7 @@ main[data-route="landing"] section a img {
   width: 100%;
   height: 100%;
   /* border-radius: 3px; */
+  object-fit: cover;
   box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15);
 }
 
@@ -278,5 +311,22 @@ main[data-route="create"] form button {
 
   main[data-route="landing"] section {
     justify-content: center;
+  }
+
+  main[data-route="landing"] section.layout-2 {
+    background: var(--white);
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  main[data-route="landing"] section a.layout-2 {
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
   }
 }

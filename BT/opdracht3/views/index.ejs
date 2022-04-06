@@ -13,12 +13,25 @@
       </div>
     </header>
 
+    <div class="layout-changer">
+      <div>
+        <button class="layout-1" value="layout-1">
+          <span class="material-icons"> view_column </span>
+        </button>
+        <button class="layout-2" value="layout-2">
+          <span style="transform: rotate(-90deg)" class="material-icons">
+            view_column
+          </span>
+        </button>
+      </div>
+    </div>
+
     <main data-route="landing">
-      <section>
+      <section class="layout-1">
         <% if(items.length === 0){ %>
         <p>You have not added any pictures to your collection yet</p>
         <% } else{ %> <% items.forEach(function(item){ %>
-        <a href="photo/<%=item.id%>">
+        <a class="layout-1" href="photo/<%=item.id%>">
           <img src="images/<%=item.image%>" alt="<%=item.image%>" />
           <span><p>More info</p></span>
         </a>
